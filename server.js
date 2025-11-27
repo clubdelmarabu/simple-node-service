@@ -20,6 +20,11 @@ app.get('/ping', (req, res) => {
   res.json({ pong: true, timestamp: Date.now() });
 });
 
+// endpoint corso
+app.get('/corso', (req, res) => {
+  res.json({ message: 'Endpoint nuovo in CI/CD per il corso' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
